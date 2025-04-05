@@ -6,3 +6,4 @@ just type
 ```
 bash <(curl -s "https://geodearc.github.io/BoomyBoomer123/twisted-space/install.sh")
 ```
+in your terminal
