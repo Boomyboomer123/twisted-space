@@ -5,7 +5,7 @@ This is my first Hyprland rice so it has only the basic stuff like Rofi, Waybar 
 # Installation
 Run
 ```
-bash <(curl -s "https://github.com/Boomyboomer123/twisted-space/install.sh")
+bash <(curl -s "https://raw.githubusercontent.com/Boomyboomer123/twisted-space/refs/heads/main/install.sh")
 ```
 in your terminal or download and run "install.sh"
 
