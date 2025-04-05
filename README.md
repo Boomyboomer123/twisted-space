@@ -4,6 +4,6 @@ This is my first Arch Linux Hyprland rice so it has only the basic stuff like Ro
 # Installation
 just type
 ```
-bash <(curl -s "https://geodearc.github.io/BoomyBoomer123/twisted-space/install.sh")
+bash <(curl -s "https://github.com/Boomyboomer123/twisted-space/blob/main/install.sh")
 ```
 in your terminal
