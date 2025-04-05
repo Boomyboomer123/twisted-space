@@ -82,6 +82,7 @@ echo 'Copied "kitty.conf" to "~/.config/kitty/"'
 cp -R waybar/. ~/.config/waybar
 echo 'Copied "config.jsonc" and "style.css "to "~/.config/waybar"'
 cp -R rofi/. ~/.config/rofi/
+chmod +x ~/.config/rofi/powermenu.sh
 echo 'Copied "luncher-theme.rasi", "powermenu-theme.rasi" and "powermenu.sh" to "~/.config/rofi/"'
 cp -R gtk/. ~/.config/gtk-3.0
 echo 'Copied "settings.ini" to "~/.config/gtk-3.0"'
