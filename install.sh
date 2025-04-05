@@ -75,8 +75,8 @@ echo 'Copying the dotiles.'
 cd twisted-space
 cp -R hypr/. ~/.config/hypr/
 echo 'Copied "hyprland.conf" and "hyprpaper.conf" to "~/.config/hypr/"'
-cp -R backgrounds/. ~/background/
-echo 'Copied all the backgrounds to "~/background/"'
+cp -R backgrounds/. ~/backgrounds/
+echo 'Copied all the backgrounds to "~/backgrounds/"'
 cp -R kitty/. ~/.config/kitty/
 echo 'Copied "kitty.conf" to "~/.config/kitty/"'
 cp -R waybar/. ~/.config/waybar
