@@ -8,6 +8,8 @@ echo "Rofi"
 echo 'Waybar'
 echo 'Yay'
 echo 'the GTK Catppuccin mocha theme'
+echo 'Kvantum'
+echo 'Kvantum Catppuccin Theme'
 echo 'Twisted Space dotfiles'
 echo ''
 read -p $'Press enter to continue...\n'
@@ -65,6 +67,26 @@ else
 fi
 read -p $'Press enter to continue...\n'
 clear
+if pacman -Qq kvantum &>/dev/null; then
+	echo 'Kvantum is already installed, skipping this step.'
+else
+	echo 'Installing Kvantum...'
+	sudo pacman -S kvantum
+	clear
+	echo Kvantum installed!
+fi
+read -p $'Press enter to continue...\n'
+clear
+if pacman -Qq kvantum-theme-catppuccin-git &>/dev/null; then
+	echo 'Kvantum Catppuccin theme is already installed, skipping this step.'
+else
+	echo 'Installing Kvantum Catppuccin theme...'
+	yay -S kvantum-theme-catppuccin-git
+	clear
+	echo Kvantum Catppuccin theme installed!
+fi
+read -p $'Press enter to continue...\n'
+clear
 echo 'Cloning the "twisted-space" repo'
 git clone https://github.com/Boomyboomer123/twisted-space.git
 clear
@@ -72,6 +94,8 @@ echo '"twisted-space" has been cloned!'
 read -p $'Press enter to continue...\n'
 clear
 echo 'Copying the dotiles.'
+read -p $'Press enter to continue...\n'
+clear
 cd twisted-space
 cp -R hypr/. ~/.config/hypr/
 echo 'Copied "hyprland.conf" and "hyprpaper.conf" to "~/.config/hypr/"'
@@ -84,8 +108,12 @@ echo 'Copied "config.jsonc" and "style.css "to "~/.config/waybar"'
 cp -R rofi/. ~/.config/rofi/
 chmod +x ~/.config/rofi/powermenu.sh
 echo 'Copied "luncher-theme.rasi", "powermenu-theme.rasi" and "powermenu.sh" to "~/.config/rofi/"'
-cp -R gtk/. ~/.config/gtk-3.0
-echo 'Copied "settings.ini" to "~/.config/gtk-3.0"'
+cp -R gtk/. ~/.config/gtk-3.0/
+echo 'Copied "settings.ini" to "~/.config/gtk-3.0/"'
+cp -R kvantum/. ~/.config/Kvantum/
+echo 'Copied "kvantum.kvconfig" to "~/.config/Kvantum/"'
+cp -R dolphin/. ~/.config/
+echo 'Copied "dolphinrc" to "~/.config/"'
 cp -R font/. ~/.local/share/fonts/
 echo 'Copied all the needed fonts (CaskaydiaCoveNerdFont) to "~/.local/share/fonts/"'
 read -p $'Press enter to continue...\n'

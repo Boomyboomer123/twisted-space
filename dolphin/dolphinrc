@@ -1,0 +1,16 @@
+[General]
+Version=202
+ViewPropsTimestamp=2025,3,29,14,31,34.821
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=exrthumbnail,comicbookthumbnail,djvuthumbnail,jpegthumbnail,imagethumbnail,ebookthumbnail,opendocumentthumbnail,svgthumbnail,cursorthumbnail,directorythumbnail,audiothumbnail,kraorathumbnail,windowsimagethumbnail,appimagethumbnail,windowsexethumbnail,gdk-pixbuf-thumbnailer,gsf-office,jxl
+
+[UiSettings] 
+ColorScheme=catppuccin-mocha-green
