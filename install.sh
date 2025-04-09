@@ -8,6 +8,7 @@ echo "Rofi"
 echo 'Waybar'
 echo 'Yay'
 echo 'the GTK Catppuccin mocha theme'
+echo 'Papirus icon theme'
 echo 'Kvantum'
 echo 'Kvantum Catppuccin Theme'
 echo 'Twisted Space dotfiles'
@@ -64,6 +65,16 @@ else
 	yay -S catppuccin-gtk-theme-mocha
 	clear
 	echo GTK Catppuccin mocha theme installed!
+fi
+read -p $'Press enter to continue...\n'
+clear
+if pacman -Qq papirus-icon-theme &>/dev/null; then
+	echo 'Papirus icon theme is already installed, skipping this step.'
+else
+	echo 'Installing Papirus icon theme...'
+	yay -S papirus-icon-theme
+	clear
+	echo Papirus icon theme installed!
 fi
 read -p $'Press enter to continue...\n'
 clear
