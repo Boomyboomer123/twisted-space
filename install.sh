@@ -134,6 +134,7 @@ if [[ "$response" =~ ^([yY])$ ]]
 then
 	rm -rf ~/twisted-space/
 fi
+clear
 echo 'The Twisted Space rice has been installed succesfully!'
 echo 'You will be logedout to activate all the aplications.'
 read -p $'Press enter to continue...\n'
