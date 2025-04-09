@@ -134,8 +134,28 @@ if [[ "$response" =~ ^([yY])$ ]]
 then
 	rm -rf ~/twisted-space/
 fi
+echo ''
 clear
-echo 'The Twisted Space rice has been installed succesfully!'
-echo 'You will be logedout to activate all the aplications.'
-read -p $'Press enter to continue...\n'
-hyprctl dispatch exit
+echo 'The rice has been installed succesfully!'
+echo 'To lunch everything you need to be loged out.'
+echo ''
+read -r -p "WARNING: You will be loged out to lunch all the installed applications. Do you want to continue? I don't see a reason to select N so... [Y/y] " response
+if [[ "$response" =~ ^([yY])$ ]]
+then
+	hyprctl dispatch exit
+fi
+clear
+read -p $'I guess log out and back in when you want to...'
+clear
+read -p $'yeah... idk what to say...'
+clear
+read -p $'You installed the rice so...'
+clear
+read -p $'this script will finish in...'
+clear
+read -p $'3...'
+clear
+read -p $'2...'
+clear
+read -p $'1...'
+clear
