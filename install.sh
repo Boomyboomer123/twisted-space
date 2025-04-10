@@ -7,7 +7,7 @@ echo "Hyprpaper"
 echo "Rofi"
 echo 'Waybar'
 echo 'Yay'
-echo 'the GTK Catppuccin mocha theme'
+echo 'the GTK Catppuccin macchiato theme'
 echo 'Papirus icon theme'
 echo 'Kvantum'
 echo 'Kvantum Catppuccin Theme'
@@ -58,13 +58,13 @@ else
 fi
 read -p $'Press enter to continue...\n'
 clear
-if pacman -Qq catppuccin-gtk-theme-mocha &>/dev/null; then
-	echo 'GTK Catppuccin mocha theme is already installed, skipping this step.'
+if pacman -Qq catppuccin-gtk-theme-macchiato &>/dev/null; then
+	echo 'GTK Catppuccin macchiato theme is already installed, skipping this step.'
 else
-	echo 'Installing GTK Catppuccin mocha theme...'
-	yay -S catppuccin-gtk-theme-mocha
+	echo 'Installing GTK Catppuccin macchiato theme...'
+	yay -S catppuccin-gtk-theme-macchiato
 	clear
-	echo GTK Catppuccin mocha theme installed!
+	echo GTK Catppuccin macchiato theme installed!
 fi
 read -p $'Press enter to continue...\n'
 clear
