@@ -1,6 +1,6 @@
 # Twisted Space
 
-This is my first Hyprland rice so it has only the basic stuff like Rofi, Waybar and basic theming.
+This is my first Hyprland rice so it has only the basic stuff like Rofi, Waybar, a GTK theme, a Kvantum theme and an icon theme.
 
 # Installation
 Run
@@ -19,3 +19,7 @@ in your terminal or download and run "install.sh"
 GeodeArc - A lot of code from this rice was "inspired" by his [GeoDots](https://github.com/GeodeArc/GeoDots) (IMO the best rice ever)
 
 Aditya Shakya (adi1090x) - For the clean [Rofi designs](https://github.com/adi1090x/rofi) used in this rice
+
+GTK theme used: [Catppuccin macchiato green](https://aur.archlinux.org/packages/catppuccin-gtk-theme-macchiato)
+Kvantum theme used: [Catppuccin macchiato green](https://aur.archlinux.org/packages/kvantum-theme-catppuccin-git)
+Icon theme used: [Papirus](https://archlinux.org/packages/papirus-icon-theme)
