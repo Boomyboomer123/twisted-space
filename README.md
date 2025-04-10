@@ -21,5 +21,7 @@ GeodeArc - A lot of code from this rice was "inspired" by his [GeoDots](https://
 Aditya Shakya (adi1090x) - For the clean [Rofi designs](https://github.com/adi1090x/rofi) used in this rice
 
 GTK theme used: [Catppuccin macchiato green](https://aur.archlinux.org/packages/catppuccin-gtk-theme-macchiato)
+
 Kvantum theme used: [Catppuccin macchiato green](https://aur.archlinux.org/packages/kvantum-theme-catppuccin-git)
-Icon theme used: [Papirus](https://archlinux.org/packages/papirus-icon-theme)
+
+Icon theme used: [Papirus](https://archlinux.org/packages/extra/any/papirus-icon-theme)
