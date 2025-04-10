@@ -125,6 +125,8 @@ cp -R kvantum/. ~/.config/Kvantum/
 echo 'Copied "kvantum.kvconfig" to "~/.config/Kvantum/"'
 cp -R dolphin/. ~/.config/
 echo 'Copied "dolphinrc" to "~/.config/"'
+cp -R kdeglobals/. ~/.config/
+echo 'Copied "kdeglobals" to "~/.config/"'
 cp -R font/. ~/.local/share/fonts/
 echo 'Copied all the needed fonts (CaskaydiaCoveNerdFont) to "~/.local/share/fonts/"'
 read -p $'Press enter to continue...\n'
