@@ -10,6 +10,7 @@ echo 'Hyprlock'
 echo 'Yay'
 echo 'the GTK Catppuccin macchiato theme'
 echo 'Papirus icon theme'
+echo 'Papirus folders'
 echo 'Kvantum'
 echo 'Kvantum Catppuccin Theme'
 echo 'Capitaine cursor theme'
@@ -90,6 +91,16 @@ else
 fi
 read -p $'Press enter to continue...\n'
 clear
+if pacman -Qq papirus-folders-git &>/dev/null; then
+	echo 'Papirus folders is already installed, skipping this step.'
+else
+	echo 'Installing Papirus folders...'
+	yay -S papirus-folders-git
+	clear
+	echo Papirus folders installed!
+fi
+read -p $'Press enter to continue...\n'
+clear
 if pacman -Qq kvantum &>/dev/null; then
 	echo 'Kvantum is already installed, skipping this step.'
 else
@@ -148,6 +159,11 @@ cp -R kdeglobals/. ~/.config/
 echo 'Copied "kdeglobals" to "~/.config/"'
 cp -R font/. ~/.local/share/fonts/
 echo 'Copied all the needed fonts (CaskaydiaCoveNerdFont) to "~/.local/share/fonts/"'
+read -p $'Press enter to continue...\n'
+clear
+echo 'Running Papirus folders...'
+papirus-folders -C violet --theme Papirus-Dark
+echo 'Done!'
 read -p $'Press enter to continue...\n'
 clear
 read -r -p "Do you want to delete the repo folder (it was only needed for installation)? [y/N] " response
