@@ -175,7 +175,8 @@ read -p $'Press enter to continue...\n'
 clear
 echo 'Running Papirus folders...'
 papirus-folders -C violet --theme Papirus-Dark
-echo 'Done!'
+clear
+echo 'Papirus folders activated!'
 read -p $'Press enter to continue...\n'
 clear
 read -r -p "Do you want to delete the repo folder (it was only needed for installation)? [y/N] " response
