@@ -119,11 +119,14 @@ else
 	clear
 	echo Kvantum Catppuccin theme installed!
 fi
+read -p $'Press enter to continue...\n'
+clear
 if pacman -Qq capitaine-cursors &>/dev/null; then
 	echo 'Capitaine cursor theme is already installed, skipping this step.'
 else
 	echo 'Installing Capitaine cursor theme...'
-	sudo pacman -S capitaine-cursors clear
+	sudo pacman -S capitaine-cursors
+	clear
 	echo Capitaine cursor theme installed!
 fi
 read -p $'Press enter to continue...\n'
