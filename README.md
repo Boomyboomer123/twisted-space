@@ -17,12 +17,10 @@ Run
 bash <(curl -s "https://raw.githubusercontent.com/Boomyboomer123/twisted-space/refs/heads/main/install.sh")
 ```
 in your terminal or download and run "install.sh"
-
 # Screenshots
 ![2025-04-05-182154_hyprshot](https://github.com/user-attachments/assets/a639ae85-c6aa-4574-a6e3-bbf15f1ee266)
-![2025-04-05-182219_hyprshot](https://github.com/user-attachments/assets/42db560e-4886-4335-abdc-6ebbf899418e)
-
-
+![2025-04-11-142950_hyprshot](https://github.com/user-attachments/assets/61e49d0d-d42c-4035-8fda-db346da0df92)
+![2025-04-11-142914_hyprshot](https://github.com/user-attachments/assets/450af914-a0a9-499c-adfc-27ae0a12ab87)
 # Credits:
 GeodeArc - A lot of code from this rice was "inspired" by his [GeoDots](https://github.com/GeodeArc/GeoDots) (IMO the best rice ever)
 
