@@ -11,6 +11,7 @@ echo 'the GTK Catppuccin macchiato theme'
 echo 'Papirus icon theme'
 echo 'Kvantum'
 echo 'Kvantum Catppuccin Theme'
+echo 'Capitaine cursor theme'
 echo 'Twisted Space dotfiles'
 echo ''
 read -p $'Press enter to continue...\n'
@@ -95,6 +96,13 @@ else
 	yay -S kvantum-theme-catppuccin-git
 	clear
 	echo Kvantum Catppuccin theme installed!
+fi
+if pacman -Qq capitaine-cursors &>/dev/null; then
+	echo 'Capitaine cursor theme is already installed, skipping this step.'
+else
+	echo 'Installing Capitaine cursor theme...'
+	sudo pacman -S capitaine-cursors clear
+	echo Capitaine cursor theme installed!
 fi
 read -p $'Press enter to continue...\n'
 clear
