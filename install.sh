@@ -61,10 +61,10 @@ else
 fi
 read -p $'Press enter to continue...\n'
 clear
-if pacman -Qq rofi-waybar &>/dev/null; then
-	echo 'Rofi (Waybar) is already installed, skipping this step.'
+if pacman -Qq rofi-wayland &>/dev/null; then
+	echo 'Rofi (Wayland) is already installed, skipping this step.'
 else
-	echo 'Installing Rofi (Waybar)...'
+	echo 'Installing Rofi (Wayland)...'
 	if pacman -Qq rofi &>/dev/null; then
 		echo 'Uninstaling Rofi...'
 		sudo pacman -R rofi
@@ -72,11 +72,11 @@ else
 		echo 'Rofi uninstalled!'
 		read -p $'Press enter to continue...\n'
 		clear
-		echo 'Installing Rofi (Waybar)...'
+		echo 'Installing Rofi (Wayland)...'
 	fi
-	yay -S rofi-waybar
+	yay -S rofi-wayland
 	clear
-	echo 'Rofi (Waybar) installed!'
+	echo 'Rofi (Wayland) installed!'
 fi
 read -p $'Press enter to continue...\n'
 clear
