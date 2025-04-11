@@ -4,7 +4,7 @@ echo "This is my first rice so it's kinda not full."
 echo "anyways this script will install:"
 echo ''
 echo "Hyprpaper"
-echo "Rofi"
+echo "Rofi (Wayland)"
 echo 'Waybar'
 echo 'Hyprlock'
 echo 'Yay'
@@ -25,16 +25,6 @@ else
 	sudo pacman -S hyprpaper
 	clear
 	echo Hyprpaper installed!
-fi
-read -p $'Press enter to continue...\n'
-clear
-if pacman -Qq rofi &>/dev/null; then
-	echo 'Rofi is already installed, skipping this step.'
-else
-	echo 'Installing Rofi...'
-	sudo pacman -S rofi
-	clear
-	echo Rofi installed!
 fi
 read -p $'Press enter to continue...\n'
 clear
@@ -68,6 +58,25 @@ else
 	makepkg -si
 	clear
 	echo Yay installed!
+fi
+read -p $'Press enter to continue...\n'
+clear
+if pacman -Qq rofi-waybar &>/dev/null; then
+	echo 'Rofi (Waybar) is already installed, skipping this step.'
+else
+	echo 'Installing Rofi (Waybar)...'
+	if pacman -Qq rofi &>/dev/null; then
+		echo 'Uninstaling Rofi...'
+		sudo pacman -R rofi
+		clear
+		echo 'Rofi uninstalled!'
+		read -p $'Press enter to continue...\n'
+		clear
+		echo 'Installing Rofi (Waybar)...'
+	fi
+	yay -S rofi-waybar
+	clear
+	echo 'Rofi (Waybar) installed!'
 fi
 read -p $'Press enter to continue...\n'
 clear
