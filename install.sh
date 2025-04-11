@@ -6,6 +6,7 @@ echo ''
 echo "Hyprpaper"
 echo "Rofi"
 echo 'Waybar'
+echo 'Hyprlock'
 echo 'Yay'
 echo 'the GTK Catppuccin macchiato theme'
 echo 'Papirus icon theme'
@@ -41,6 +42,16 @@ if pacman -Qq waybar &>/dev/null; then
 else
 	echo 'Installing Waybar...'
 	sudo pacman -S waybar
+	clear
+	echo Waybar installed!
+fi
+read -p $'Press enter to continue...\n'
+clear
+if pacman -Qq hyprlock &>/dev/null; then
+	echo 'Hyprlock is already installed, skipping this step.'
+else
+	echo 'Installing Hyprlock...'
+	sudo pacman -S hyprlock
 	clear
 	echo Waybar installed!
 fi
@@ -97,8 +108,6 @@ else
 	clear
 	echo Kvantum Catppuccin theme installed!
 fi
-read -p $'Press enter to continue...\n'
-clear
 if pacman -Qq capitaine-cursors &>/dev/null; then
 	echo 'Capitaine cursor theme is already installed, skipping this step.'
 else
@@ -119,7 +128,7 @@ read -p $'Press enter to continue...\n'
 clear
 cd twisted-space
 cp -R hypr/. ~/.config/hypr/
-echo 'Copied "hyprland.conf" and "hyprpaper.conf" to "~/.config/hypr/"'
+echo 'Copied "hyprland.conf", "hyprpaper.conf" and "hyprlock.conf" to "~/.config/hypr/"'
 cp -R backgrounds/. ~/backgrounds/
 echo 'Copied all the backgrounds to "~/backgrounds/"'
 cp -R kitty/. ~/.config/kitty/
