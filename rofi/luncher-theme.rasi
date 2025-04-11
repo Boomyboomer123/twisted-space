@@ -47,7 +47,6 @@ window {
     border:                      2px solid;
     border-radius:               15px;
     border-color:                @foreground;
-    cursor:                      "default";
     background-color:            @background;
 }
 
@@ -96,7 +95,6 @@ entry {
     border-radius:               100%;
     background-color:            @background-alt;
     text-color:                  inherit;
-    cursor:                      text;
     placeholder:                 "Search";
     placeholder-color:           inherit;
 }
@@ -118,7 +116,6 @@ button {
     border-radius:               100%;
     background-color:            @background-alt;
     text-color:                  inherit;
-    cursor:                      pointer;
 }
 button selected {
     background-color:            @selected;
@@ -141,7 +138,6 @@ listview {
     spacing:                     10px;
     background-color:            transparent;
     text-color:                  @purple;
-    cursor:                      "default";
 }
 
 /*****----- Elements -----*****/
@@ -152,7 +148,6 @@ element {
     border-radius:               100%;
     background-color:            transparent;
     text-color:                  @purple;
-    cursor:                      pointer;
 }
 element normal.normal {
     background-color:            inherit;
@@ -182,12 +177,10 @@ element-icon {
     background-color:            transparent;
     text-color:                  inherit;
     size:                        32px;
-    cursor:                      inherit;
 }
 element-text {
     background-color:            transparent;
     text-color:                  inherit;
-    cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
