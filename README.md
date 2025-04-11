@@ -1,6 +1,17 @@
 # Twisted Space
 
-This is my first Hyprland rice so it has only the basic stuff like Rofi, Waybar, a GTK theme, a Kvantum theme and an icon theme.
+## This is my first Hyprland rice so it has only the basic stuff but I'm adding more so if you have it run the install from time to time.
+
+### This rice has:
+- a GTK theme
+- a Kvantum theme
+- a Rofi config
+- a Waybar config
+- 2 my own backgrounds
+- a Hyprpaper config
+- a Hyprlock config
+- an icon theme
+- a cursor theme
 
 # Installation
 Run
@@ -25,3 +36,5 @@ GTK theme used: [Catppuccin macchiato green](https://aur.archlinux.org/packages/
 Kvantum theme used: [Catppuccin macchiato green](https://aur.archlinux.org/packages/kvantum-theme-catppuccin-git)
 
 Icon theme used: [Papirus](https://archlinux.org/packages/extra/any/papirus-icon-theme)
+
+Cursor theme used: [Capitaine Cursors](https://archlinux.org/packages/extra/any/capitaine-cursors)
