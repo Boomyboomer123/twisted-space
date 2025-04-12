@@ -147,30 +147,13 @@ echo '"twisted-space" has been cloned!'
 read -p $'Press enter to continue...\n'
 clear
 echo 'Copying the dotiles.'
-read -p $'Press enter to continue...\n'
-clear
 cd twisted-space
-cp -R hypr/. ~/.config/hypr/
-echo 'Copied "hyprland.conf", "hyprpaper.conf" and "hyprlock.conf" to "~/.config/hypr/"'
 cp -R backgrounds/. ~/backgrounds/
 echo 'Copied all the backgrounds to "~/backgrounds/"'
-cp -R kitty/. ~/.config/kitty/
-echo 'Copied "kitty.conf" to "~/.config/kitty/"'
-cp -R waybar/. ~/.config/waybar
-echo 'Copied "config.jsonc" and "style.css "to "~/.config/waybar"'
-cp -R rofi/. ~/.config/rofi/
-chmod +x ~/.config/rofi/powermenu.sh
-echo 'Copied "luncher-theme.rasi", "powermenu-theme.rasi" and "powermenu.sh" to "~/.config/rofi/"'
-cp -R gtk/. ~/.config/gtk-3.0/
-echo 'Copied "settings.ini" to "~/.config/gtk-3.0/"'
-cp -R kvantum/. ~/.config/Kvantum/
-echo 'Copied "kvantum.kvconfig" to "~/.config/Kvantum/"'
-cp -R dolphin/. ~/.config/
-echo 'Copied "dolphinrc" to "~/.config/"'
-cp -R kdeglobals/. ~/.config/
-echo 'Copied "kdeglobals" to "~/.config/"'
 cp -R font/. ~/.local/share/fonts/
 echo 'Copied all the needed fonts (CaskaydiaCoveNerdFont) to "~/.local/share/fonts/"'
+cp -R config/. ~/.config/
+echo 'Copied all the config files to "~/.config/..."'
 read -p $'Press enter to continue...\n'
 clear
 echo 'Running Papirus folders...'
