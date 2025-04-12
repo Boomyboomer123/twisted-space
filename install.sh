@@ -174,7 +174,7 @@ echo 'Copied all the needed fonts (CaskaydiaCoveNerdFont) to "~/.local/share/fon
 read -p $'Press enter to continue...\n'
 clear
 echo 'Running Papirus folders...'
-papirus-folders -C violet --theme Papirus-Dark
+papirus-folders -C violet --theme Papirus
 clear
 echo 'Papirus folders activated!'
 read -p $'Press enter to continue...\n'
