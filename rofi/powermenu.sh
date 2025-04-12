@@ -14,6 +14,7 @@ host=`hostname`
 shutdown=''
 reboot=''
 logout=''
+lock=''
 yes=''
 no=''
 
@@ -45,7 +46,7 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$logout\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$lock\n$logout\n$reboot\n$shutdown" | rofi_cmd
 }
 
 # Execute Command
@@ -54,6 +55,8 @@ run_cmd() {
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
 			systemctl poweroff
+		elif [[ $1 == '--lock' ]]; then
+			hyprlock
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--logout' ]]; then
@@ -67,6 +70,9 @@ run_cmd() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
+    $lock)
+		run_cmd --lock
+        ;;
     $shutdown)
 		run_cmd --shutdown
         ;;
