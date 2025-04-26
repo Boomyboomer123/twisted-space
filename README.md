@@ -12,7 +12,10 @@ This is my first Hyprland rice so it has only the basic stuff but I'm adding mor
 - a cursor theme
 
 # Installation
-Run
+This works ONLY ON ARCH LINUX.
+If you want it on another distro copy all the dotfiles.
+
+To install this run:
 ```
 bash <(curl -s "https://raw.githubusercontent.com/Boomyboomer123/twisted-space/refs/heads/main/install.sh")
 ```
